@@ -19,7 +19,7 @@ void store(int a[4][4], int b[][2], int *c) {
 } 
 void disp(int b[][2], int c) { 
     for (int i = 0; i < c; i++) 
-        prin ("%d %d\n", b[i][0], b[i][1]); 
+        printf("%d %d\n", b[i][0], b[i][1]); 
 } 
 int main() { 
     int a[4][4], b[16][2], c; 
