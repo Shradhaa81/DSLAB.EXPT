@@ -9,7 +9,7 @@ void enqueue(){
     struct node *temp; 
     int x; 
     temp=(struct node*)malloc(sizeof(struct node)); 
-    prin ("Enter value: "); 
+    printf("Enter value: "); 
     scanf("%d",&x); 
     temp->data=x; 
     temp->next=NULL; 
@@ -23,7 +23,7 @@ void enqueue(){
 void dequeue(){ 
     struct node *temp; 
     if(front==NULL){ 
-        prin ("Queue Underflow\n"); 
+        printf("Queue Underflow\n"); 
         return; 
     } 
     temp=front; 
@@ -35,15 +35,15 @@ void dequeue(){
 void display(){ 
     struct node *temp=front; 
     while(temp!=NULL){ 
-        prin ("%d ",temp->data); 
+        printf("%d ",temp->data); 
         temp=temp->next; 
     } 
-    prin ("\n"); 
+    printf("\n"); 
 } 
 int main(){ 
     int ch; 
     while(1){ 
-        prin ("1.Enqueue 2.Dequeue 3.Display 4.Exit\n"); 
+        printf("1.Enqueue 2.Dequeue 3.Display 4.Exit\n"); 
         scanf("%d",&ch); 
         switch(ch){ 
             case 1: enqueue(); break; 
