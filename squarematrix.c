@@ -7,8 +7,8 @@ void transpose(int a[10][10], int t[10][10], int n) {
 void disp(int a[10][10], int n) { 
     for (int i = 0; i < n; i++) { 
         for (int j = 0; j < n; j++) 
-            prin ("%d ", a[i][j]); 
-        prin ("\n"); 
+            printf("%d ", a[i][j]); 
+        printf("\n"); 
     } 
 } 
 int main() { 
