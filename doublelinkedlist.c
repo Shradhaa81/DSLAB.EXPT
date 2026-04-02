@@ -13,11 +13,11 @@ void create(int n){
     int i; 
     for(i=0;i<n;i++){ 
         temp=(struct node*)malloc(sizeof(struct node)); 
-        prin ("Enter account number: "); 
+        printf ("Enter account number: "); 
         scanf("%d",&temp->acno); 
-        prin ("Enter name: "); 
+        printf ("Enter name: "); 
         scanf("%s",temp->name); 
-        prin ("Enter balance: "); 
+        printf ("Enter balance: "); 
         scanf("%f",&temp->balance); 
         temp->next=NULL; 
         temp->prev=NULL; 
@@ -39,11 +39,11 @@ void total_balance(){
         total+=temp->balance; 
         temp=temp->next; 
     } 
-    prin ("\nTotal Balance of all customers = %.2f\n",total); 
+    printf ("\nTotal Balance of all customers = %.2f\n",total); 
 } 
 int main(){ 
     int n; 
-    prin ("Enter number of customers: "); 
+    printf ("Enter number of customers: "); 
     scanf("%d",&n); 
     create(n); 
     total_balance(); 
