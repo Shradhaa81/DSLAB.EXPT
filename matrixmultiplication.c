@@ -10,8 +10,8 @@ void mul(int a[10][10], int b[10][10], int r[10][10], int r1, int c1, int c2) {
 void disp(int a[10][10], int r, int c) { 
     for (int i = 0; i < r; i++) { 
         for (int j = 0; j < c; j++) 
-            prin ("%d ", a[i][j]); 
-        prin ("\n"); 
+            printf("%d ", a[i][j]); 
+        printf("\n"); 
     } 
 } 
 int main() { 
