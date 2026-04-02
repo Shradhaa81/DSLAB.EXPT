@@ -9,7 +9,7 @@ void push(){
     struct node *temp; 
     int x; 
     temp=(struct node*)malloc(sizeof(struct node)); 
-    prin ("Enter value: "); 
+    printf("Enter value: "); 
     scanf("%d",&x); 
     temp->data=x; 
     temp->next=top; 
@@ -18,7 +18,7 @@ void push(){
 void pop(){ 
     struct node *temp; 
     if(top==NULL){ 
-        prin ("Stack Underflow\n"); 
+        printf("Stack Underflow\n"); 
         return; 
     } 
     temp=top; 
@@ -28,15 +28,15 @@ void pop(){
 void display(){ 
     struct node *temp=top; 
     while(temp!=NULL){ 
-        prin ("%d ",temp->data); 
+        printf("%d ",temp->data); 
         temp=temp->next; 
     } 
-    prin ("\n"); 
+    printf("\n"); 
 } 
 int main(){ 
     int ch; 
     while(1){ 
-        prin ("1.Push 2.Pop 3.Display 4.Exit\n"); 
+        printf("1.Push 2.Pop 3.Display 4.Exit\n"); 
         scanf("%d",&ch); 
         switch(ch){ 
             case 1: push(); break; 
