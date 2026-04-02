@@ -18,7 +18,7 @@ int main() {
     int a[SIZE]; 
     for (int i = 0; i < SIZE; i++) 
         scanf("%d", &a[i]); 
-    prin ("Max: %d\n", MAX(a, SIZE)); 
-    prin ("Min: %d\n", MIN(a, SIZE)); 
+    printf ("Max: %d\n", MAX(a, SIZE)); 
+    printf("Min: %d\n", MIN(a, SIZE)); 
     return 0; 
 } 
