@@ -10,7 +10,7 @@ void insert_begin(){
     struct node *temp; 
     int x; 
     temp=(struct node*)malloc(sizeof(struct node)); 
-    prin ("Enter value: "); 
+    printf("Enter value: "); 
     scanf("%d",&x); 
     temp->data=x; 
     temp->prev=NULL; 
@@ -22,7 +22,7 @@ void insert_begin(){
 void delete_first(){ 
     struct node *temp; 
     if(head==NULL){ 
-        prin ("List empty\n"); 
+        printf("List empty\n"); 
         return;
     } 
     temp=head; 
@@ -34,18 +34,18 @@ void delete_first(){
 void display(){ 
     struct node *temp=head; 
     if(head==NULL){ 
-        prin ("List empty\n"); 
+        printf("List empty\n"); 
         return; 
     } 
     while(temp!=NULL){ 
-        prin ("%d ",temp->data); 
+        printf("%d ",temp->data); 
         temp=temp->next; 
-    }  prin ("\n"); 
+    }  printf("\n"); 
 } 
 int main(){ 
     int ch; 
     while(1){ 
-        prin ("\n1.Insert Beginning\n2.Delete First\n3.Display\n4.Exit\n"); 
+        printf("\n1.Insert Beginning\n2.Delete First\n3.Display\n4.Exit\n"); 
         scanf("%d",&ch); 
         switch(ch){ 
             case 1: insert_begin(); break; 
