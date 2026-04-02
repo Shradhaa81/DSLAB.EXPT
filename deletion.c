@@ -1,8 +1,8 @@
 #include <stdio.h> 
 void display(int a[], int n) { 
     for (int i = 0; i < n; i++) 
-        prin ("%d ", a[i]); 
-    prin ("\n"); 
+        printf ("%d ", a[i]); 
+    printf("\n"); 
 } 
 int del(int a[], int n, int pos) { 
     for (int i = pos; i < n - 1; i++) 
