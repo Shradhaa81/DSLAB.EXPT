@@ -18,7 +18,7 @@ void traverse(){
     if(front==-1) return; 
     int i=front; 
     while(1){ 
-        prin ("%d ",cq[i]); 
+        printf("%d ",cq[i]); 
         if(i==rear) break; 
         i=(i+1)%MAX; 
     } 
