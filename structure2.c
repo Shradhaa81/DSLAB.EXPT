@@ -9,7 +9,7 @@ struct Product {
 void display(struct Product p[], int n) { 
     for (int i = 0; i < n; i++) 
         if (p[i].cost >= 100 && p[i].cost <= 1000) 
-            prin ("%d %s %.2f\n", p[i].pno, p[i].name, p[i].cost); 
+            printf("%d %s %.2f\n", p[i].pno, p[i].name, p[i].cost); 
 } 
 int main() { 
     struct Product *p; 
