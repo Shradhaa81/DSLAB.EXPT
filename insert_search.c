@@ -8,7 +8,7 @@ struct node *head=NULL;
 void insert_pos(){ 
     struct node *temp,*ptr; 
     int x,pos,i; 
-    prin ("Enter value and posi on: "); 
+    printf("Enter value and posi on: "); 
     scanf("%d%d",&x,&pos); 
     temp=(struct node*)malloc(sizeof(struct node)); 
     temp->data=x; 
@@ -21,7 +21,7 @@ void insert_pos(){
     for(i=1;i<pos-1 && ptr!=NULL;i++) 
         ptr=ptr->next; 
     if(ptr==NULL){ 
-        prin ("Invalid posi on\n"); 
+        printf ("Invalid posi on\n"); 
         return; 
     } 
     temp->next=ptr->next; 
@@ -30,7 +30,7 @@ void insert_pos(){
 void search(){ 
     struct node *temp=head; 
     int key,pos=1; 
-    prin ("Enter value to search: "); 
+    printf ("Enter value to search: "); 
     scanf("%d",&key); 
     while(temp!=NULL){ 
         if(temp->data==key){ 
@@ -40,7 +40,7 @@ void search(){
         temp=temp->next; 
         pos++; 
     } 
-    prin ("Not found\n"); 
+    printf("Not found\n"); 
 } 
 void display(){ 
     struct node *temp=head; 
@@ -48,13 +48,13 @@ void display(){
         prin ("%d ",temp->data); 
         temp=temp->next; 
     } 
-    prin ("\n"); 
+    printf ("\n"); 
 } 
  
 int main(){ 
     int ch; 
     while(1){ 
-        prin ("1.Insert Posi on 2.Search 3.Display 4.Exit\n"); 
+        printf ("1.Insert Posi on 2.Search 3.Display 4.Exit\n"); 
         scanf("%d",&ch); 
         switch(ch){ 
             case 1: insert_pos(); break; 
