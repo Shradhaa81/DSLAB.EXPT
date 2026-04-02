@@ -13,11 +13,11 @@ void create(int n){
     int i; 
     for(i=0;i<n;i++){ 
         temp=(struct node*)malloc(sizeof(struct node)); 
-        prin ("Enter player name: "); 
+        printf("Enter player name: "); 
         scanf("%s",temp->name); 
-        prin ("Enter team name: "); 
+        printf("Enter team name: "); 
         scanf("%s",temp->team); 
-        prin ("Enter ba ng average: "); 
+        printf("Enter ba ng average: "); 
         scanf("%f",&temp->avg); 
         temp->next=NULL; 
         if(head==NULL) 
@@ -32,16 +32,16 @@ void create(int n){
 } 
 void display(){ 
     struct node *temp=head; 
-    prin ("\nPlayers with ba ng average >= 50\n"); 
+    printf("\nPlayers with ba ng average >= 50\n"); 
     while(temp!=NULL){ 
         if(temp->avg>=50) 
-            prin ("%s %s %.2f\n",temp->name,temp->team,temp->avg); 
+            printf("%s %s %.2f\n",temp->name,temp->team,temp->avg); 
         temp=temp->next; 
     } 
 } 
 int main(){ 
     int n; 
-    prin ("Enter number of players: "); 
+    printf("Enter number of players: "); 
     scanf("%d",&n); 
     create(n); 
     display(); 
